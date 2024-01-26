@@ -1,0 +1,28 @@
+.container{
+  margin: 0 auto;
+  max-width: 90%;
+}
+.mainTop{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catigoriesBlock{
+  max-width: 70%;
+  margin-left: 15%;
+}
+.categoriesList{
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+.categoriesItem{
+  // border:2px solid red;
+  border-radius: 15px;
+  margin-right: 20%;
+  padding: 13px 16px;
+}
