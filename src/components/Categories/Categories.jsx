@@ -2,14 +2,18 @@ import React from 'react'
 import styles from './Categories.module.scss'
 
 const Categories = ({items, onClickItem}) => {
+  const [activeItem, setActiveItem] = React.useState('1')
+
   return (
-    <div className={styles.catigoriesBlock}>
+    <div className={styles.categoriesBlock}>
       <ul className={styles.categoriesList}>
-        <li className={styles.categoriesItem}>Все</li>
+        <li>Все</li>
+        
         {
-          items.map((category, index) => <li 
-            onClick={() => onClickItem(category)} 
-            className={styles.categoriesItem} 
+          items.map((category, index) => 
+          <li 
+            onClick={() => setActiveItem(index)} 
+            className={activeItem == index ? styles.categoriesItemActive : styles.categoriesItem} 
             key= {`${category}_${index}`}>{category}
           </li>)
         }
