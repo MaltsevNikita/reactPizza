@@ -10,7 +10,9 @@ const Main = () => {
       <div className={styles.container}>
     
         <div className={styles.mainTop}>
-          <Categories items = {['Мясные',
+          <Categories 
+            onClickItem={(category) => console.log(category)} 
+            items = {['Мясные',
             'Вегитарианские',
             'Гриль',
             'Острые',
