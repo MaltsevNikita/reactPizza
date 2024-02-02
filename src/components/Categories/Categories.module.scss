@@ -1,0 +1,24 @@
+.catigoriesBlock {
+  padding-left: 10%;
+  max-width: 60%;
+  // margin-left: 10px;
+}
+
+.categoriesList {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  padding: 5%;
+}
+
+.categoriesItem {
+  // border:2px solid red;
+  border-radius: 15px;
+  // background-color: #000;
+  // color: #fff;
+  margin-right: 20%;
+  padding: 13px 16px;
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './Main.module.scss'
 import { GoTriangleUp } from "react-icons/go";
-import SinglePizza from '../SinglePizza/SinglePizza'
+import SinglePizza  from '../SinglePizza/SinglePizza';
+import Categories  from '../Categories/Categories';
 
 const Main = () => {
   return (
@@ -9,16 +10,13 @@ const Main = () => {
       <div className={styles.container}>
     
         <div className={styles.mainTop}>
-          <div className={styles.catigoriesBlock}>
-            <ul className={styles.categoriesList}>
-              <li className={styles.categoriesItem}>Все</li>
-              <li className={styles.categoriesItem}>Мясные</li>
-              <li className={styles.categoriesItem}>Вегитарианские</li>
-              <li className={styles.categoriesItem}>Гриль</li>
-              <li className={styles.categoriesItem}>Острые</li>
-              <li className={styles.categoriesItem}>Закрытые</li>
-            </ul>
-          </div>
+          <Categories items = {['Мясные',
+            'Вегитарианские',
+            'Гриль',
+            'Острые',
+            'Закрытые',
+          ]}/>
+
           <div className={styles.SortBlock}>
             <GoTriangleUp/>
             <b>Сортировка по:</b>
